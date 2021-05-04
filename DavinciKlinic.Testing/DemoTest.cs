@@ -35,8 +35,11 @@ namespace DavinciKlinic.Testing
             var context = new DavinciKlinicDBContext(optionsBuilder.Options);
 
             //Realizar Borrado de Todos Loc clientes Existentes en la BD
-            context.Clientes.RemoveRange(context.Clientes.ToArray());
-            context.SaveChanges();
+            //context.Clientes.RemoveRange(context.Clientes.ToArray());
+            //context.SaveChanges();
+
+            context.Database.EnsureDeleted();
+            context.Database.EnsureCreated();
 
             //Crear Controllador
             ClientesController controller = new ClientesController(clientesOps);
