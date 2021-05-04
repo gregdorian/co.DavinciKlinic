@@ -33,6 +33,12 @@ La carpeta 05 indica la capa de presentacion Web o Interfaz de Usuario
 
 La carpeta 06 indica la capa de Testing
 
+**NOTA** Por Simplicidad de la prueba solo se van a tomar los proyectos o capas de
+     01-DavinciKlinicinfraestructureData 
+     02-DavinciKlinic.Domain 
+     05-DavinciKlinic.UI.Web 
+     06-DavinciKlinic.Testing
+     
 **Patrones de Diseño**
 - DTO
 - Repositorio
