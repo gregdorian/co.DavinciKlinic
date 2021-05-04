@@ -1,0 +1,3 @@
+Respuesta: Cómo se podría asegurar una alta disponibilidad de los recursos expuestos en el API
+
+usando APIs distribuidos, o microservicios, usar Servicos en la nube como Azure, Amazon API Gateway, Google etc.
