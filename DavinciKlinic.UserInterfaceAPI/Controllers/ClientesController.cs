@@ -16,7 +16,7 @@ namespace DavinciKlinic.UserInterfaceAPI.Controllers
     public class ClientesController : ControllerBase
     {
         //*** la inyeccion de dependencias para realizar un proyecto sencillo
-        public IClientesService clientesOps;
+        private readonly IClientesService clientesOps;
 
         //**constructor para inyectar
         public ClientesController(IClientesService clientesOps)
