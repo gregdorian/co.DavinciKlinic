@@ -13,6 +13,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 
 namespace DavinciKlinic.UserInterfaceAPI
 {
@@ -32,7 +33,8 @@ namespace DavinciKlinic.UserInterfaceAPI
         options.UseSqlServer(
             Configuration.GetConnectionString("DavinciKlinicConn")));
             services.AddControllers();
-
+            //automaper
+            services.AddAutoMapper(typeof(Startup));
             //Servicios de la capa de aplicación con servicios de dominio
             services.AddScoped(typeof(IBaseService<>), typeof(BaseService<>));
             services.AddScoped<IClientesService, ClientesOperaciones>();
